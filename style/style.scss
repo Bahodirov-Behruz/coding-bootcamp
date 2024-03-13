@@ -9,6 +9,8 @@
 }
 body {
   font-family: "Inter";
+  background: url(/img/wrapper-img.svg) no-repeat;
+  background-position: 0% 100%;
 }
 .wrapper {
   width: 100%;
@@ -98,6 +100,9 @@ body {
   }
 }
 @media screen and (max-width: 1150px) {
+  .body {
+    background-size: 70%;
+  }
   .wrapper {
     height: 100%;
     .container {
@@ -105,28 +110,33 @@ body {
       display: flex;
       flex-direction: column-reverse;
       .information {
+        width: 550px;
+        height: 400px;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         .info {
           position: static;
-          display: flex;
-
           text-align: center;
+        }
+        .name {
+          margin: 0;
         }
       }
       .user-foto {
         button {
-          transform: translate(190px, -24px);
+          transform: translate(0px, -24px);
         }
       }
     }
   }
 }
 @media screen and (max-width: 750px) {
+  body {
+    background-size: 50%;
+  }
   .wrapper {
-    background: url(/img/wrapper-img.svg) no-repeat;
-    background-position: bottom;
     height: 100vh;
     padding: 0 32px;
     .container {
